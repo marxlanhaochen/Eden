@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			.b1{
+				background-color: red;
+				z-index: 99;
+				/*
+				 	z-index
+				 		针对于脱流的元素  数值越大 越在前
+				 		默认是0
+				 		
+				 		一般这么设置
+				 				从最小到最大 9 99 999 9999 ...
+				 				
+				 * */
+				
+			}
+			.b2{
+				background-color: yellow;
+				left: 50px;
+				
+				
+			}
+			.b3{
+				background-color: green;
+				left: 25px;
+				
+				
+			}
+			
+			
+		</style>
+		
+		
+		
+	</head>
+	
+	
+	
+	<body>
+		<div>
+			<div class="b1"></div>
+			<div class="b2"></div>
+			<div class="b3"></div>
+				
+			
+		</div>
+	</body>
+</html>

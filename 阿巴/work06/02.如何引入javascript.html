@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			      如何引入javascript 
+			  1.行内引入法
+			      js在html中进行操作 主要引入需要配合事件函数来
+			  2.内嵌式/页面中引入---只作用与一个页面
+			      <script type="text/javascript">
+			      	
+			      </script>
+			  3.外连式引入---作用于多个页面  
+			      1.创建一个js文件   以js结尾的文件
+			      2.可以将这个文件通过script标签引入到需要的html中 
+			      
+			      
+			        js可以单独运行【node环境中】，也可以在【浏览器】中运行
+			        js运行砸客户单的前端脚本语言
+			 *      javascript 和java 什么关系 
+			 *         没有任何关系  
+			 *         javascript 语法和java 很像 几乎是一模一样  所以学会了js的基本语法  在学习java的时候  学习成本就会很低 
+			 * 
+			 *      如何使用javascript
+			 *        学习javascript 的基本语法 
+			 *           1  引入 
+			 *           2  输出 
+			 *           3 变量
+			 *           4 数据 类型
+			 *           5 运算符 
+			 *  	     6  数组
+			 *           7 程控制语句 
+			 *           8 循环控制语句
+			 *           9 函数
+			 *           10 原型 原型链
+			 * 
+			 * 
+			 *         对象  面向对象
+			 *         内置对象【了解】 
+			 * 
+			 *         dom
+
+			 * */
+			input{
+				width: 80px;
+				height: 30px;
+				border-radius: 10px;
+				background-color:yellow;
+				opacity: 0.3;
+				border: 4px red dashed;				
+			}
+			
+			
+		</style>
+		<!--javascript 的引入
+			
+			  1.行内引入法
+			      js在html中进行操作 主要引入需要配合事件函数来
+			      
+			  2.内嵌式引入 
+			      <script type="text/javascript">
+			      	
+			      </script>
+			      
+			  3.外连式引入
+			      1.创建一个js文件   以js结尾的文件
+			      2.可以将这个文件通过script标签引入到需要的html中
+			  
+			  js的输出方式 
+			    1  弹出 
+			                    普通网页输出  alert()
+			                    弹出网页的输入 prompt()  返回字符串类型 
+			                    弹出判断询问
+			    2 控制台输出 
+			    	普通输出【掌握】
+					 	console.info(输出信息)
+					 	console.log(输出信息)
+					警告输出【了解】
+					 	console.warn(警告信息)
+					错误输出【了解/会看错误信息】
+					 	console.error(错误信息)
+			    	
+			    3 页面输出
+			
+		-->
+	</head>
+	<SCRIPT type="text/javascript">
+		//  单行注释
+		/*
+		 *  多行注释 
+		 * */
+		//  页面一加载在网页上就有弹出   
+		/**
+		 *  js的代码规范 
+		 *     1.js是区分大小写的 同时大写或同时小写
+		 *     2.js中每一样结束 可以添加; 也可以不添加 但是推荐  添加
+		 * 
+		 */
+		alert(1024);
+		alert('你好');  
+		alert('文字要加单引号哦');
+		alert('英文English也要加单引号哦' );		
+     </SCRIPT>
+	
+	<body>
+		<!--为元素添加点击事件 
+			  onclick= 添加javascript:js的脚本
+			
+		-->
+		<input type="button" value="点我点我" onclick="javascript:alert(2048)"/><br />
+		<input type="button" value="点我点我" onclick="javascript:alert('E n g l i s h       空格也可以显示')"/><br />
+		<input type="button" value="点我点我" onclick="javascript:alert('汉字和英文字母要加单引号')"/>
+	</body>
+</html>

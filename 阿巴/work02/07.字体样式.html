@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * 样式的注意事项: 
+			 *    相同属性在同一个样式表中  那么后面的样式会覆盖掉前面的样式
+			 * 
+			 * 字体样式
+			 
+			 * */
+			
+			html {
+				font-size: 50px;
+			}
+			div {
+				/*设置字体大小
+				         字体大小  单位 
+				         px   像素
+				         em   字体相对于父元素的倍数
+				         rem  字体大小相对于根元素的倍数
+				 * */
+				/*网页默认的字体大小都是16px
+				 */
+				font-size: 16px;
+				font-size: 32px;
+			}
+			
+			span {
+				
+				/*设置字体大小*/
+				font-size: 64px;
+				font-size: 0.1em;
+				font-size: 0.2em;
+				
+				
+				/*设置字体类型*/
+				font-family: "微软雅黑";
+			
+			
+				/*设置字体样式  是否倾斜  */
+				font-style: ;/*倾斜*/
+			/*	font-style: normal;  *//*正常 不倾斜*/
+				
+				
+				font-weight: 900;
+				/*设置字体是否加粗
+				   取值范围  100 - 900   数值越大  字体越粗
+				 写英文单词 
+				     lighter
+				     normal    400
+				     blod      700
+				     bloder    900
+				 * */
+			}
+			
+			
+			/*这种写法  简单 但是不常用*/		
+			span {
+				
+				font: normal 2em 楷体 blod;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>
+			上元教育
+			<span>
+				上元IT
+			</span>
+		</div>
+		
+		我是html
+	</body>
+</html>

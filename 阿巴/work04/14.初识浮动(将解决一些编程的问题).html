@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*浮动
+			 	什么是浮动
+			 		让元素浮起来
+			 	浮动解决的问题
+			 		让块级元素变为一行
+			 	
+			 	重点特性：浮动特性以及清除浮动	
+			 	   1.将块级元素变为一行
+			 	   			有两个方向的浮动
+			 	   					1.左浮动 float:left
+			 	   					2.右浮动 float:right
+			 	   2.要为子元素添加浮动，浮动的元素必须由一个父元素包裹【写法上】
+			 	   		绝大多数情况不要以body为父元素
+			 	   3.要想成为同一行元素，必须都添加浮动
+			 	   4.当父盒子的宽度小于子盒子宽度的总和，那么浮动不上去的盒子会掉下来，但还是浮动的
+		     【重点】*5.**浮动的盒子脱离了文档流	【重点】	
+			 	   6.行级元素也可以浮动，且浮动的元素相当于行内块元素	
+			 		   										不换行 可以设置宽高
+			 	   7.浮动的元素可以清除元素之间默认的间距	   										
+
+			 * */
+			.p{
+				border: 5px solid blue;				
+			}			
+			
+			div.s1,div.s2,div.s3{
+				width: 100px;
+				height: 100px;
+				border-radius:50% ;	
+				
+																
+				/*让子元素参加浮动  让块级元素成为一行
+			 		float 浮动属性
+			 			left 左浮动
+			 			right 右浮动
+			 	*/		
+				/*float: right;*/
+				/*float: left;*/
+									
+			}									
+			div.s1{
+				background-color: red;
+				/*float: right;*/
+			}
+			
+			div.s2{
+				background-color: yellow;
+				/*float: right;*/
+			}
+			
+			div.s3{
+				background-color: green;
+				/*float: right;*/
+			}
+			
+			div.box{
+				width: 100px;
+				height: 200px;
+				background-color: pink;
+			}
+			
+			span{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				float: left;
+				
+			}
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	
+	<body>
+		
+		<div class="p">
+			<div class="s1"></div>
+			<div class="s2"></div>
+			<div class="s3"></div>			
+		</div>
+		<div class="box">
+			
+		</div>
+		<hr />
+		<div class="span">
+			<span>上元教育</span>
+			<span>上元it</span>
+		</div>
+		
+	</body>
+</html>

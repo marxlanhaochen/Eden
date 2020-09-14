@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			     1 分析网页结构 
+			     2 编写公共样式 
+			     		清除默认间距 
+			         	改变盒模型的方式 css3
+			         	去掉a标签的公共样式
+			         	a标签有个鼠标悬停的样式 
+			         	整体设置字体
+			         	定义浮动 定义清除浮动 
+			         	清除列表的小圆点 
+			         	
+			     3 书写html+css 
+			     
+			     引入图片的方式 
+			       方式1  img标签引入 
+			          1 比较大的图片
+			          2 经常更换的图片 
+			        例如 电商网站 商品图片 
+			      方式2          背景图
+			         1 比较小的图片
+			         2不会发生改变的图片
+			 * 
+			 * */
+			/*
+			    公共样式编写 
+			 * */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body {
+				font-size: 12px;
+			}
+			
+			a {
+				color: #B80000;
+			}
+			
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+				float: right;
+			}
+			
+			.clearbox::after {
+				content: "A";
+				clear: both;
+				display: block;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			#box {
+				width: 280px;
+				border: 1px solid #aacbee;
+				margin: 20px auto;
+				border-radius: 7px;
+				padding: 25px 15px 20px 20px;
+			}
+			
+			.top .left h2 {
+				margin-left: 15px;
+			}
+			
+			.top .left h2 span:first-child {
+				color: #B80000;
+			}
+			
+			.top .left {
+				margin-bottom: 23px;
+			}
+			
+			.top .right a {
+				width: 44px;
+				height: 14px;
+				background-image: url(img2020.8.31/more.gif);
+				display: block;
+			}
+			
+			.bottom .right {
+				padding-right: 15px;
+			}
+			
+			.bottom .right h5 {
+				height: 30px;
+				padding-top: 5px;
+			}
+			
+			.bottom .right p {
+				height: 18px;
+			}
+			
+			img {
+				vertical-align: middle;
+			}
+			
+			.bottom {
+				margin-top: 12px;			
+			}
+			
+			.bottom:first-child{
+				margin-top: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div class="top clearbox">
+				<div class="left fl">
+					<h2>
+						<span id="">SHOP</span>
+						<span id="">今日推荐</span>																		
+					</h2>
+				</div>
+				<div class="right fr">
+					<a href="#"></a>
+				</div>
+			</div>
+			<div class="bottom clearbox">
+				<div class="left fl">
+					<a href="#">
+						<img src="img2020.8.31/img7.gif" />
+					</a>
+				</div>
+				<div class="right fr">
+					<h5>
+						<a href="#" style="position: relative;">汉来国际美食百货</a>
+					</h5>
+					<p>口味：创意中餐</p>
+					<p>区域： 朝阳/CBD</p>
+				</div>
+			</div>
+			<div class="bottom clearbox">
+				<div class="left fl">
+					<a href="#">
+						<img src="img2020.8.31/img7.gif" />
+					</a>
+				</div>
+				<div class="right fr">
+					<h5>
+						<a href="#">汉来国际美食百货</a>
+					</h5>
+					<p>口味：创意中餐</p>
+					<p>区域： 朝阳/CBD</p>
+				</div>
+			</div>
+			<div class="bottom clearbox">
+				<div class="left fl">
+					<a href="#">
+						<img src="img2020.8.31/img7.gif" />
+					</a>
+				</div>
+				<div class="right fr">
+					<h5>
+						<a href="#">汉来国际美食百货</a>
+					</h5>
+					<p>口味：创意中餐</p>
+					<p>区域： 朝阳/CBD</p>
+				</div>
+			</div>
+			<div class="bottom clearbox">
+				<div class="left fl">
+					<a href="#">
+						<img src="img2020.8.31/img7.gif" />
+					</a>
+				</div>
+				<div class="right fr">
+					<h5>
+						<a href="#">汉来国际美食百货</a>
+					</h5>
+					<p>口味：创意中餐</p>
+					<p>区域： 朝阳/CBD</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

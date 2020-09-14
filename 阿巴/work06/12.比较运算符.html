@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 特殊的比较运算符
+			 	字符串也可以比较
+			 		等于==	长等于===
+			 			 			 
+			 * */
+			var str01="123"
+			var str02="20"
+			var str03="1230"
+			var str04=1110
+			
+			/*
+			 比较字符串的对应位置的数值大小
+				 如果字符串对应位的数值相等，则比较长度
+				 字符串和数字进行比较  先将字符串转为数字 再进行比较
+			 * */
+			console.info(str01>str02)//false
+			console.info(str01==str03)//false
+			//如果字符串对应位的数值相等，则比较长度
+			console.info(str01<str03)//true
+			//字符串和数字进行比较  先将字符串转为数字 再进行比较
+			console.info(str01>str04)//false
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

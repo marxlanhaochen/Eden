@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电视剧列表</title>
+		<style type="text/css">
+			/*
+			     1 分析网页结构 
+			     2 编写公共样式 
+			         	去掉a标签的公共样式
+			         	a标签有个鼠标悬停的样式 
+			         	整体设置字体
+			         	定义浮动 定义清除浮动 
+			         	清除列表的小圆点 
+			         	清除默认间距 
+			         	改变盒模型的方式 css3
+			     3 书写html+css 
+			     
+			     引入图片的方式 
+			       方式1  img标签引入 
+			          1 比较大的图片
+			          2 经常更换的图片 
+			        例如 电商网站 商品图片 
+			      方式2          背景图
+			         1 比较小的图片
+			         2不会发生改变的图片
+			 * 
+			 * */
+			
+			/*
+			    公共样式编写 
+			 * */
+			
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			body {
+				 font-size: 12px;
+			}
+			
+			
+			a {
+				color: #3c3c3c;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+			}
+			
+			
+			.fl {
+				float: left;
+			}
+			
+			.fr {
+			    float:right;
+			}
+			
+			.clearbox::after {
+				content: "A";
+				clear: both;
+				display: block;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			
+			#box {
+				width: 330px;
+				margin: 20px auto;
+			}
+			
+			/*头部*/
+			.header {
+				height: 32px;
+				border: 1px solid #cccccc;
+				line-height: 32px;
+				/*padding-left: 40px;*/
+				background: url(img05/1.gif) no-repeat 14px center;				
+			}
+			
+			.header h3 {
+				margin-left: 40px;
+			}
+			
+			.main {
+				margin-top: 15px;
+			}
+			
+			.main .left {
+				width: 130px;
+			}
+			
+			.main .left a img {
+				border: 1px solid #CCCCCC;
+				padding: 3px;
+			}
+			
+			.main .right {
+				width: 200px;
+			}
+			
+			
+			.main .right h4 {
+				height: 50px;
+				padding-top: 15px;
+			}
+			
+			.main .right p {
+				height: 28px;
+			}
+			
+			ul li {
+				height: 33px;
+			}
+			
+			ul li  span {
+				float: right;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="header">
+				<h3>明星荐片</h3>
+			</div>
+			<div class="main clearbox">
+				<div class="left fl">
+					<a href="#">
+						<img src="img05/3.gif" />
+					</a>
+				</div>
+				<div class="right fl">
+					<h4>
+						<a href="#">周秀娜荐片:让子弹飞</a>
+					</h4>
+					<p>导演：姜文</p>
+					<p>主演：姜文 周润发 葛优</p>
+					<p>点评：我最喜欢的要算《让子弹飞》</p>
+					<p>了,超喜欢...[<a href="#">详情</a>]
+					</p>
+				</div>
+			</div>
+			<ul>
+				
+				<li>
+					<a href="#">《巴别塔》：好的故事引人深思</a>
+					<span>阿朵</span>
+				</li>
+				<li>
+					<a href="#">《洛杉矶之战》：外星人那么弱智？</a>
+					<span>丁子俊</span>
+				</li>
+				<li>
+					<a href="#">《让子弹飞》：武侠里也可以有爱情</a>
+					<span>周秀娜</span>
+				</li>
+				<li>
+					<a href="#">《剑雨》：好的故事引人深思</a>
+					<span>叶年生</span>
+				</li>
+				<li>
+					<a href="#">《春风沉醉的夜晚》：非常真实</a>
+					<span>如小果</span>
+				</li>
+				<li>
+					<a href="#">《克洛伊》：故事简单却细致</a>
+					<span>刘若英</span>
+				</li>
+				
+			</ul>
+		</div>
+	</body>
+</html>

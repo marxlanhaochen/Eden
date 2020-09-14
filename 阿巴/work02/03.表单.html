@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单信息</title>
+	</head>
+	<body>
+		
+		<!--
+			常用的表单元素 
+			    文本框 
+			    密码框
+		               单选框
+		                复选框
+				 下拉列表
+				 文本域
+				 文本上传
+				 按钮
+		     	隐藏域
+		 所有的表单元素都是 行内块级元素
+		 
+		 无论单选还是复选  
+		    都有一个组的概念  同一个组  name值相同 
+		
+		每个表单元素都有一个name属性  name属性 可以作为传递数据
+		每个表单元素都有一个value属性  value属性可以作为传递具体数值
+		表单  另一个标签 form
+		   action  标识 表单发送给服务器的具体位置
+		   target  属性  同超链接属性
+		     _self【覆盖原标签页打开】
+		     _blank【新标签页打开】
+		     
+		  提交方式 
+		    method 请求方式
+		         get   默认请求方式 
+		             	特点： 传递的参数都会在url中显示  key=value
+		             	            传递的的大小是有限制的 一般情况 文本信息不能超过 4kb
+		             	    get 不能够传递图片
+		         post
+		                                                 特点：
+		                                                           参数不会在url中展示
+		                   	 可以传送大文件数据       
+		                   	 
+		  表单的常用属性
+		        只读属性  readonly
+		       置灰属性  disbaled
+		       
+		  只读和置灰的区别 
+		    视觉上的区别   disbaled 有个灰色的区域
+		         只读  数据是可以传递
+		        置灰  数据不可以进行传递 
+		   只读只是作用于 文本表单中   text/textarea  
+		   置灰可以作用于任何表单元素  表单元素上有置灰属性就意味着 该表单元素功能失效
+		   
+		   文本提示器： palaceholder
+		 页面一加载，表单中就会有光标  autofocus
+		 是否显示历史搜索记录   autocomplete   
+		                     off  关闭历史搜索记录
+		                     on  开启搜索记录
+		 type number 属性
+		    min   最小能够输入的数字 
+		    max   最大能输入的数字
+		 
+		 针对于单选和复选 
+		radio/checkbox 而言  默认的选中  checked
+		    
+		针对下拉选项
+		option   selected 表示初始加载选择哪一项
+		
+		表单关联： 
+		    <label></label>
+		    
+		    <label for=idvalue></label>
+		    关联到 指定的id值为 idvalue的标签上
+		
+		-->
+		<form action="http://www.baidu.com" method="get">
+			<!--隐藏域
+				表示   页面中看不到数据 
+				但是 在提交表单的时候 数据可以被提交
+			-->
+		
+			 <input type="hidden" name="id" value="123456" />
+			<label>
+				用户名：<input type="text" name="user" value="" placeholder="请输入用户名"  autocomplete="on"/> 
+			</label> <br />
+			数字:<input type="number" name="num" value="10" min="1" max="20"/>                                                                 <br />
+			用户名：<input type="text" name="user2" value="admin2" disabled/>  <br />
+		密码：  <input type="password" name="pwd" autofocus/>   <br />
+		性别：   <label>
+					男：<input type="radio"  name="gander" value="boy"  />
+		       </label>  
+			 <label>
+			 	女：<input  checked type="radio" name="gander" value="girl" />
+			 </label>
+		 <label>
+		 	保密：<input type="radio"name="gander" value="secret" checked/><!--checked 单选或多选的默认属性-->
+		 </label>
+		<br />
+		爱好： 
+		<!--
+			for  属性  找到对应的id值 进行关联
+		-->
+		 <label for="football">
+		             足球:
+		 </label>
+		    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		             
+		     <input id="football" type="checkbox" name="play" value="football" checked/><!--checked 单选或多选的默认属性-->
+		 
+		  <label>
+			  篮球:&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="play" value="basball" />
+		</label>
+			  羽毛球:<input type="checkbox" name="play" value="yumao" checked/>
+			  乒乓球:<input type="checkbox" name="play" value="pingpang"/><br />
+	    所在城市： <select name="city">
+	    	     	 <option value="sz">苏州</option>
+		    	     <option value="nj">南京</option>
+		    	     <option value="hz" selected>杭州</option> <!--selected 下拉选的默认属性-->
+		    	     <option value="jx">嘉兴</option>
+	         	</select><br />
+	    大头贴：
+	        <input type="file" name="file" /><br />
+	      个人说明：
+	        <textarea cols="30" rows="5" name="pro"></textarea><br/>
+		<!--提交按钮  作用  提交表单  默认   提交-->
+	   三类按钮：  提交按钮  <input type="submit" value="注册" /><br />
+	                         重置按钮： <input type="reset" value="重置按钮" /><br />
+	                         <!--value 表示按钮的名称-->
+	               <!--按钮 只能够点击  但是不能够提交表单 
+	               	       通常配合javascript使用
+	               	 
+	               -->
+	                          普通按钮:<input type="button" value="普通按钮"/>      
+			
+		</form>
+		           
+	</body>
+</html>

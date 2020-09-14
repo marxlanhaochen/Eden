@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 	绝对定位absolute
+			 		是相对于body进行定位的
+			 		是脱离文档流的
+			 	如果父元素有定位 那么 子元素不相对于body定位，而是相对于父元素进行定位
+			 	
+			 	子绝父相：
+			 		如果子元素设置了绝对定位 那么父元素一般会设置成相对定位 那么 子元素的偏移会跟着父元素 erbushibody元素
+			 	
+			 	
+			 	
+			 * */
+			.p{
+				width: 500px;
+				height: 500px;
+				background-color: red;
+				position: relative;
+				margin-left: 300px;
+				
+			}
+			
+			.s{
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				position: absolute;
+				left:100px;
+				top: 100px;
+				
+				
+			}
+			.s2{
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="p">
+			<!--<div class="s2">
+				
+			</div>
+			-->
+		</div>
+	</body>
+</html>

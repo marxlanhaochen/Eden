@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			/*如何解决margin合并问题
+			 	1 给父盒子加入上边框
+			 	2 在父元素中添加 overflow属性
+			 	
+			 	
+			 * */
+			
+			
+			.pbox{
+				width: 500px;
+				height: 500px;
+				background-color: red;
+				
+				/*加入上边框*/
+				/*border-top: 3px black solid;*/
+				
+				overflow: hidden;/*在父元素中添加 overflow属性,用于解决margin合并问题*/
+				
+				
+			}
+									
+			.sbox{
+				width: 200px;
+				height: 200px;
+				background-color: yellow;
+				margin: auto;
+				margin-top:  150px;
+			}
+			
+			
+		</style>
+		
+	</head>
+	
+	
+	
+	<body>
+		<div class="pbox">
+			<div class="sbox">
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>

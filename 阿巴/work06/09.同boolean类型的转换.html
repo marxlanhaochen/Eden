@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		/*
+		 	boolean 布尔类型
+		 		true 真
+		 		false 假
+		 	
+		 	boolean类型的底层是 0 和 1
+		 						1 真
+		 						0 假
+		 						
+		 	
+		 	boolean是否可以转为熟数字类型
+		 		
+		 		转为数字
+		 			Number和parseInt/parseFloat区别
+		 			
+		 		相同点 
+		 			Number和parseInt/parseFloat都可以将字符串类型转为数字类型
+		 		
+		 		不同点
+		 			Number可以将boolean类型转为数字类型
+		 			parseInt/parseFloat
+		 			Number不能转换非数字类型的字符串
+		 			parseInt/parseFloat 具有截取功能 可以转换非数字类型的字符串 只要这个字符串是以数字类型开头的就可以 
+		 			parseInt只能截取整数
+		 			parseFloat只能截取小数
+		 			
+		 			
+		 	
+		 	
+		 	
+		 * */
+		console.info(Number(true))//1
+		console.info(Number(false))//0
+		
+		
+		/*
+		 	字符串转为boolean类型
+		 		非空字符串 表示 true
+		 		空字符串 表示 false
+		 			 	
+		*/
+		console.info(Boolean("abc"));//true
+		console.info(Boolean(""));//false
+		console.info(Boolean(" "));//true 有空格
+		
+		/*
+			数字转为boolean类型
+				0表示false
+				非0表示true
+		 */
+		console.info(Boolean(1));//true
+		console.info(Boolean(-1));//true
+		console.info(Boolean(0));//false
+		
+		/*
+		 	未定义和空转为boolean类型
+		 		undefined表示false
+		 		null表示false
+		 	* 
+		 	* */
+		console.info(Boolean(undefined));//false
+		console.info(Boolean(null));//false
+		
+		/*
+		 	结论：
+		 		js 什么表示真true
+		 				非空字符串
+		 				非0数字
+		 		
+		 		js 什么表示假false
+		 				空字符串
+		 				数字0
+		 				undefined
+		 				null
+		 
+		 
+		 
+		 * */
+			
+			
+		
+	</script>
+	
+	<body>
+	</body>
+</html>

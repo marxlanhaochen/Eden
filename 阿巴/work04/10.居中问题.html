@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 居中问题
+			 	1 文本左右的居中
+			 	2 文本上下的居中
+			 	3 盒子左右的居中
+			 	4 盒子上下的居中
+			 	5 文字和图片的居中
+			 * 
+			 * */
+			
+			div{
+				width: 300px;
+				height: 100px;
+				border: 2px red solid;
+				text-align: center;/*文本左右居中*/
+				
+				/*文本的上下居中  令行高=高度 line-height=height 即可*/
+				line-height: 100px;
+				/*图片也是文本*/
+								
+			}
+			
+			.box{
+				width: 900px;
+				height: 600px;
+				background-color: gainsboro;				
+			}
+			
+			.content{
+				width: 300px;
+				height: 100px;
+				border: 2px red solid;
+				background-color: red;
+				color: white;
+				text-align: center;
+				line-height: 100px;/*文本的上下居中  令行高=高度 line-height=height 即可*/
+				margin-left: auto;/*盒子左右居中*/
+				margin-right: auto;/*盒子左右居中*/
+				
+				
+			}
+			
+			/*文本和图片的对齐方式*/
+			img{
+				vertical-align: baseline;/*默认基线对齐*/
+				vertical-align: middle;/*文本在图片的右边对齐*/
+				vertical-align: top;/*文本在图片的顶部对齐*/
+				
+				
+			}
+			
+		</style>
+		
+		
+		
+	</head>
+	<body>
+		<div class="box">
+			
+			<div class="content">
+				居中问题
+			</div>
+			
+			
+		</div>
+		<img src="../../../java0824(兰子健)/day01/day01work/img/得加钱.jpg"/>得加钱
+		
+	</body>
+</html>

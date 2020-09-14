@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 	flex 常用的属性
+			 			改变主轴方向
+			 					flex-direction: row;默认主轴方向从左往右
+								flex-direction: row-reverse;主轴方向从右往左
+								flex-direction: column;默认主轴方向从上往下
+								flex-direction: column-reverse;主轴方向从下往上
+			 			
+			 			改变主轴方向的元素位置
+			 					justify-content:flex-start;默认所有元素到主轴最前端
+								justify-content:flex-end;所有元素到主轴最末端
+								justify-content: center;所有元素到主轴最中间	
+								justify-content: space-around;环绕对齐
+								justify-content: space-between;两端对齐
+			 			
+			 			改变侧轴方向的元素位置
+					 			align-items: flex-start;默认在侧轴方向最前端
+								align-items: flex-end;在侧轴方向的最末端
+								align-items: center;在侧轴方向的中间
+								align-items: baseline;基线对齐  以盒子内的文本为基线对齐
+								align-items: stretch;拉伸对齐  注意：仅对没有设置高度的属性才有效
+			 			
+			 			是否换行
+				 				flex-wrap: nowrap;默认不换行
+								flex-wrap: wrap;换行
+			 					
+			 			
+			 			堆践排列		必须在换行的情况下使用才生效	属性和主轴位置的属性相同
+					 			align-content: flex-start;换行所有元素顶部对齐
+								align-content: flex-end;换行所有元素底部对齐
+								align-content: center;换行所有元素居中对齐
+								align-content: space-around;换行所有元素环绕对齐
+								align-content: space-between;换行所有元素两端对齐
+			 			
+			 
+			 
+			 
+			 * */
+		.box{
+				width: 700px;
+				height: 200px;
+				border: 2px solid deepskyblue;
+				display: flex;
+			
+			}	
+			
+		.b1{
+				/*改变主轴方向，设置在父元素中*/						
+				flex-direction: row-reverse;/*主轴方向从右往左*/
+				flex-direction: column;/*默认主轴方向从上往下*/
+				flex-direction: column-reverse;/*主轴方向从下往上*/
+				flex-direction: row;/*默认主轴方向从左往右*/
+				
+				/*改变侧轴方向的元素位置*/
+				align-items: flex-start;/*默认在侧轴方向最前端*/
+				align-items: flex-end;/*在侧轴方向的最末端*/
+				align-items: center;/*在侧轴方向的中间*/
+				align-items: baseline;/*基线对齐   用的少   以盒子内的文本为基线对齐*/
+				align-items: stretch;/*拉伸对齐  用的少  注意：仅对没有设置高度的属性才有效*/
+											
+			}
+		.b2{
+				/*设置主轴方向的元素位置*/				
+				justify-content:flex-end;/*所有元素到主轴最末端*/
+				
+				justify-content:flex-start;/*默认所有元素到主轴最前端*/
+				justify-content: center;/*所有元素到主轴最中间*/
+				/*是否换行*/
+				flex-wrap: nowrap;/*默认不换行*/
+				flex-wrap: wrap;/*换行*/
+				
+		}	
+		
+		.b3{
+				
+				
+				/*两端对齐*/
+				justify-content: space-between;
+			
+				/*环绕对齐*/
+				justify-content: space-around;
+					
+		}	
+		
+		.b4{
+				/*堆栈排列  必须在换行的情况下使用才生效  属性和主轴位置的属性相同*/
+				
+				
+				align-content: flex-start;/*换行所有元素顶部对齐*/
+				align-content: flex-end;/*换行所有元素底部对齐*/
+				align-content: center;/*换行所有元素居中对齐*/
+				align-content: space-around;/*换行所有元素环绕对齐*/
+				align-content: space-between;/*换行所有元素两端对齐*/
+				flex-wrap: wrap;		
+			
+			
+			
+		}
+		
+		
+			.d{
+				width: 100px;
+				height: 100px;
+				/*border-radius: 50%;*/
+				
+			}
+			.d1{
+				background-color: red;
+				
+			}
+			
+			.d2{
+				background-color: yellow;
+				
+			}
+			
+			.d3{
+				background-color: green;	
+							
+			}
+			.d4{
+				background-color: orange;				
+			}
+			.d5{
+				background-color: blue;				
+			}
+			div{
+				text-align: center;
+				line-height: 100px;
+				font-family: "微软雅黑";
+				font-size: 20px;
+			}
+		</style>
+	
+	
+	<body>
+		<div class="box b1">
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>						
+		</div>
+		<div class="box b2">
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>						
+		</div>
+		<div class="box b3">
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>						
+		</div>
+			<div class="box b4">
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>	
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>	
+			<div class="d d1">1</div>
+			<div class="d d2">22</div>
+			<div class="d d3">333</div>
+			<div class="d d4">4444</div>
+			<div class="d d5">55555</div>	
+		</div>
+	</body>
+</html>

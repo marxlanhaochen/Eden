@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 	弹性盒子flex布局
+			 	
+			 		1 作用
+			 			取代浮动
+			 				优点：能自动计算
+			 					   让块级元素变为一行
+			 					   
+			 		2 如何设置一个弹性盒子
+			 		
+			 		3 弹性盒子中的常用属性
+			 			3.1 设置在父元素上的属性
+			 			3.2 设置在子元素上的属性
+			 
+			 
+			 
+			 * */
+			.box{
+				width: 350px;
+				border: 3px solid;
+				display: flex ;
+				/*
+				   display 
+				      block
+				      inline
+				      inline-block
+				      none
+				      flex   将这个盒子设置成一个弹性盒子
+				 * 
+				 * */
+				
+			}
+			
+			.s{
+				width: 100px;
+				height: 100px;
+			/*添加浮动  - 边框合并 解决  清除浮动*/
+				/*float: left;*/	
+								
+			}
+			
+			.s1{
+				background-color: red;
+				
+			}
+			
+			.s2{
+				background-color:yellow ;
+				
+			}
+			
+			.s3{
+				background-color:green ;
+				
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="box">
+			<div class="s s1"> </div>
+			<div class="s s2"> </div>
+			<div class="s s3"> </div>
+										
+		</div>
+		
+		
+		
+		
+	</body>
+</html>

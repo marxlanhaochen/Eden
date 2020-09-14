@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> 边框</title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				background: orange;
+				
+				
+				
+				border-width: 5px;
+				border-style: solid;
+				border-color: #f00;
+			/*上述三行代码可简写成 border：5px solid #f00；：
+			 */	
+			/*边框简写
+			 		边框简写要素：
+			 * 				边框方位：
+			 * 					border-方位词-边框三要素
+			 * 
+			 * */	
+			 
+			 	/*单独设置上边框*/
+				border-top-width: 5px;
+				border-top-color: red;
+				border-top-style: dashed;
+				/*以上三行可简写为一行*/
+				border-top:5px deepskyblue dashed ;
+				
+				
+				/*单独设置右边框*/
+				border-right-width: 10px;
+				border-right-color: yellow;
+				border-right-style: dotted;
+				/*以上三行可简写为一行*/
+				border-right: 10px mediumvioletred dotted;
+				
+				
+				/*单独设置下边框*/
+				border-bottom-width: 15px;
+				border-bottom-color: blue;
+				border-bottom-style: solid;
+				/*以上三行可简写为一行*/
+				border-bottom: 15px blue solid;
+				
+				
+				/*单独设置左边框*/
+				border-left-width: 20px;
+				border-left-color: green;
+				border-left-style: double;
+				/*以上三行可简写为一行*/
+				border-left: 20px green double;
+				 															
+				
+			}
+			
+			
+			input{
+				border-top: none;/*去除某方向的边框*/
+				border: none;/*去除整个的边框，鼠标选中原框位置显示光标闪烁和轮廓*/
+				
+				/*去掉轮廓，鼠标选中只剩光标闪烁*/
+				outline: none;
+				
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div>上元教育</div><br />
+		<input type="" name="" id="" value="" />
+		
+		
+		
+	</body>
+</html>

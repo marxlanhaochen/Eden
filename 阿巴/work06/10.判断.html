@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 	判断一个内容是否是一个数字
+			 	
+			 	
+			 	保留一个数字的几位小数
+			 
+			 
+			 * */
+			
+			var a = 123;
+				/*
+				 isNaN 判断一个值是不是一个数字
+				 	不是数字 返回 真
+				 	是数字 返回 假
+				
+				 isNaN	如何判断是否是个数字？
+				 	先将里面的内容通过Number转换成数字类型 再去判断
+				 	
+				 * */
+			 var b = isNaN(a);
+			 console.info(b)//false
+			 //isNaN	如何判断是否是个数字？	先将里面的内容通过Number转换成数字类型 再去判断				 	
+			 console.info(isNaN('123a'))//true
+			 console.info(isNaN('123'))//false
+				
+			
+			
+			
+			
+			/*
+			 	获取一个数字的保留几位数
+			 		.toFixed(保留小数的位数)
+			 			注意：
+			 				返回的是字符串类型
+				 			.toFixed()不输入或输入0时会默认只保留整数
+				 			保留小数时会进行四舍五入
+			 				   
+			 * */
+			console.info(3.1415.toFixed());			
+			console.info(3.1415.toFixed(0));
+			console.info(3.1415.toFixed(1));			
+			console.info(3.1415.toFixed(2));
+			console.info(3.1415926.toFixed(3));
+			console.info(3.1415926.toFixed(4));
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

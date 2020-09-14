@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>运算符</title>
+		<script type="text/javascript">
+			/*
+			 	算术运算符
+			 		+ - * /	% ++ --
+			 		
+			 		+ 比较特殊 有3层含义
+			 					1 加法
+			 					2 正数
+			 					3 字符串的拼接
+			 						字符串和任意类型相加都会返回出一个新的字符串
+			 		% 取余				
+			 		
+			 		++ 自增   
+			 			++在前	先自加 再赋值
+			 			++在后	先赋值 再自加
+			 		
+			 		-- 自减
+			 		
+			 		
+			 	比较运算符
+			 		大于 >
+			 		小于 <
+			 		等于 ==
+			 		不等于 !=			 		
+			 		大于等于 >=
+			 		小于等于 <=
+			 		长等于 ===
+			 		
+			 	赋值运算符
+			 	
+			 	逻辑运算符
+			 	
+			 	三元运算符
+			 	
+			 				 				 			 
+			 * */
+			var a = 1;
+			var b = 1;			
+			console.info(Number(a+b));
+			var c = 3;
+			var d = -10;			
+			console.info(Number(c+d));
+			
+			//字符串的拼接
+			var str01="abc";
+			var str02="	EFG";
+			console.info(str01+str02);//abcEFG
+			
+			/*
+			 其他类型转为字符串类型
+			 	toString()
+			 	String()
+			 
+			 最简单的方式
+			 	任何类型+空字符串
+			 * */
+			
+			
+			
+			// %相除取余
+			var e =10;
+			var f =3;
+			console.info(e%f);// 1
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

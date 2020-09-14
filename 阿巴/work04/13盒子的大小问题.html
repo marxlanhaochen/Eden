@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*盒子的大小问题
+			css2的盒子模型 	1个盒子的实际大小=content+(padding)*2+(border)*2
+			css2的盒子模型的弊端: 		
+			 			我们设置的宽高实际上是content的宽高，
+			 			如果改变宽高或者改变padding border的值就会影响整个盒子的大小
+			解决问题的思考：
+						是否存在一种方式：设置的宽高是实际的盒子大小，而不是content的大小，使content的实际大小自动计算 			
+			
+			
+			 
+			 * 		*/
+			.box2{
+				width: 400px;
+				height: 400px;
+				padding: 50px;
+				border: 50px solid red;
+				
+			}
+			
+			
+			
+			.box3{
+				margin-top: 50px;
+				width: 400px;
+				height: 400px;
+				padding: 50px;
+				border: 50px solid red;
+				box-sizing: content-box;  /*css2 的盒子模型*/
+				box-sizing: border-box; /*css3的盒子模型 width/height 不再是content的宽度和高度 而是整个盒子的宽度和高度*/							
+			
+			}			
+				
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		<!--css2的盒子模型-->
+		<div class="box2">
+			
+		</div>
+		
+		<!--css3的盒子模型-->
+		<div class="box3">
+			
+		</div>
+		
+		
+	</body>
+</html>

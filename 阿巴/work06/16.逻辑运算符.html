@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 逻辑运算符	通常情况下 结果都是一个boolean值	
+			 	与	a && b	含义 a和b同为真，返回的结果就为真，否则为假。即 a和b只要有一个是假 那么返回的结果就是假
+			 	或	a || b	含义 a和b同为假，返回的结果就是假。即 a和b 只要有一个真 那么返回的结果就是真
+			 	非	！a		含义 取反  真变假 假变真  
+			 					！！ 取消取反
+			
+			注意：逻辑运算左右两侧都存在 隐式转换 如果是隐式转换的值，返回的结果就不再是boolean类型了
+			 
+			逻辑运算符
+				a && b或者a || b
+			执行特点
+				如果a可以判断出整个表达式的结果 那么b就不执行
+				如果a无法判断出表达式的结果 b才会执行
+			 
+			 * */
+			var r01 = 1 > 2  || 1 < 2;// a和b 只要有一个真，那么返回的结果就是真
+			console.info(r01)//true
+			
+			var r02 = 10/5==2 && 1+1==2; 
+			console.info(r02)//true
+			
+			var r03 = !(1 > 2);// ！a   取反
+			console.info(r03)//true
+			
+			var r04 = !!(1 > 2);// !! a  取消取反
+			console.info(r04)//false
+			
+			/*
+			 执行顺序面试题
+			 * */
+			var m = 10;
+			var r041 = m>0 && m++ >0;
+			console.info(r041)//true
+			console.info(m)// 11
+			
+			
+			
+			
+			var n = 10;
+			var r042= n>0 || n++ >0;
+			console.info(r042)//true
+			console.info(n)// 10
+			
+			/*
+			 a&&b或者a||b   a和b也可以进行隐式转换	如果a和b是一个隐式转换值  那么结果就可能不是boolean类型（true/false）			 		 
+			 * */
+			
+			var re05=undefined||"0 1234";//【注意】undefined可以隐式转换为假
+			console.info(re05)//如果第一个值隐式转换为假，那么结果会是第二个值123
+			
+			var re06=null&&"456";//【注意】null即为假
+			console.info(re06)//null
+			
+			
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

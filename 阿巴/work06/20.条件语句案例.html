@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 需求：
+			 	小明考试的成绩
+			 		[90,100]成绩A
+			 		[80,90)	成绩B	
+			 		[70,80)	成绩C
+			 		[60,70)	成绩D
+			 		[0,60)	成绩E
+			 * */
+			
+			//多重if...else if...else if...效率高
+			var score = prompt("请输入考试成绩")			
+			if(score>=90 && score<=100)
+			{alert("周五吃火锅！")
+			}
+			else if(score>=80 && score<90)
+			{alert("你的成绩为B")
+			}
+			else if(score>=70 && score<80)
+			{alert("你的成绩为C")
+			}
+			else if(score>=60 && score<70)
+			{alert("你的成绩为D")
+			}
+			else if(score>=0 && score<60)
+			{alert("你的成绩为E")
+			}
+			else{alert("请输入有效成绩！")
+			}
+				
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

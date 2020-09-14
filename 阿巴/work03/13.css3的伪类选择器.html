@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*css3 伪类选择器 
+			     存在的意义    在标签不添加额外的  class id 选择器 进行制定的选择
+			 *   兄弟  
+			 *      nth-of-type
+			 *      first-of-type
+			 *      last-of-type 
+			 *   父子的 
+			 *      nth-child
+			 *      first-child
+			 *      last-child
+			 *    
+			 * */
+			
+			/**
+			 * first-of-type
+			 * last-of-type
+			 *  nth-of-type()
+			 *  选择方式 
+			 *   tag:nth-of-type(n) 
+			 *   1。 先选择tag这个标签 
+			 *   2。找到tag的父元素
+			 *   3。 根据索引 查找和tag一样的兄弟元素
+			 * 
+			 * 
+			 */
+			li:first-of-type {
+				color: red;font-size: 32px
+			}
+			
+			li:last-of-type {
+				color: yellow;
+			}
+			
+			li:nth-of-type(3) {
+				color: blue;
+			}
+			
+			
+			/**
+			 * first-child
+			 * last-child
+			 *  nth-child()
+			 *  选择方式 
+			 *   tag:nth-child(n) 
+			 *   1。 先选择tag这个标签 
+			 *   2。找到tag的父元素
+			 *   3。 根据索引 查找标签  如果这个标签和选择器的标签是一样的 则被选中 否则选不中
+			 * 
+			 * 
+			 */		 	
+			 	/*
+			 	li:first-child{
+			 		color: red;
+			 	}
+			 	
+			 	li:nth-child(4){
+			 		color: yellow;
+			 	}
+			 	
+			 	li:last-child{
+			 		color: deepskyblue; 
+			 	}
+			 	*/
+			 	/*css3选择器的迭代作用*/
+			 	 	
+			 	/* 	
+			 	 nth-child(n)
+			 	 nth-of-type(n)
+			 	 	这个n就可以迭代，n可以从0开始取值 每次自增1 一直到选不出元素为止
+			 	 	
+			 	 	注意事项：n只能写在数字之前
+			 	 		
+			 	 	* */
+			 	
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		<ul>
+			<span>我是一个span标签</span>
+			<li>北京</li>
+			<li>上海</li>
+			<span>我也是一个span标签</span>
+			<li>广州</li>
+			<li>深圳</li>
+		</ul>
+		
+		<ol>
+			<li>柴</li>
+			<li>米</li>
+			<li>油</li>
+			<li>盐</li>
+			<li>酱</li>
+			<li>醋</li>
+			<li>茶</li>			
+		</ol>
+		
+		
+	</body>
+</html>

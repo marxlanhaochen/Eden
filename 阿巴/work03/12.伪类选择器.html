@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*超链接的四种状态
+			 	1未被访问
+			 	2已被访问
+			 	3鼠标悬停
+			 	4正在访问
+			 针对以上四种状态 css为其提供了四个样式 称之为伪类
+			 
+			 	a:	http://127.0.0.1:8020/%e8%87%aa%e7%94%b1%e7%bb%83%e4%b9%a0/day03/12%e4%bc%aa%e5%85%83%e7%b4%a0%e9%80%89%e6%8b%a9%e5%99%a8.html#
+			 	
+			 	
+			 	* */
+			 	
+			 	/*未被访问*/
+			 	a:link{
+			 		color: red;
+			 		  }
+			 	
+			 	/*已被访问*/
+			 	a:visited{
+			 		color: green;
+			 			 }
+			 	
+			 	/*鼠标悬停*/
+			 	a:hover{
+			 		color: yellow;
+			 		   }
+			 	
+			 	/*正在访问（鼠标按下）*/
+			 	a:active{
+			 		color: gray;
+					font-size: 50px;
+						}
+							 	
+			 	
+			 	
+			 	/*
+			 	 这四种状态
+			 	 未被访问和已被访问 仅用于超链接a标签
+			 	 鼠标悬停和正在访问 适用于所有标签
+			 	 * 
+			 	 * 
+			 	 * */
+			 	/*注意：[顺序记法：lv  h a或vl  h a]
+			 		当a:link a:visited :hover 同时存在 hover必须写在 a:link和a:visited之后
+			 		当:hover和 :active 同时存在 :active 一定要写在 :hover  之后
+			 	
+			 	 * 
+			 	 */
+			 	
+			 	
+			 	
+			 	
+			 	a:hover{background-color: yellow;
+			 	}
+			 	
+			 	a:active{background-color: red;		 	
+			 	}
+			 	
+			 	/*鼠标悬停 背景变绿 */
+			 	div:hover{background-color: green;}
+			 	/*正在访问（鼠标按下）背景变黄 字大小x2 字变红色*/
+			 	div:active{background-color: yellow;font-size: 2em;color: red;}
+			 	
+			 	
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		<a href="#">百度</a>
+		<div id="">
+			bilibili
+		</div>
+		
+	</body>
+</html>

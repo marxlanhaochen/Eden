@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*属性选择器
+			 什么是属性
+			 [attr]
+			 attr
+			 attr^=value
+			 attr$=value 
+			 attr*=value 选择attr属性中存在value的标签
+			 * 
+			 * */
+			/*存在选择
+			 	选择带有href属性的*/
+			a[href]{
+			 	color: red;
+			 }	
+			 /*[person]{
+			 	color: blue;
+			 }	
+			*/
+			/*精准匹配*/
+			a[href="http://www.baidu.com"] {
+				color: blue;
+			}	
+			
+			/*前匹配 选中以http协议开头的超链接*/
+			a[href ^="https"]{
+			 	color: yellow;
+			 }	
+			 
+			 /* 后匹配 */
+			 a[href $="org"]{
+			 	color: green;
+			 }	
+			
+			/*模糊匹配*/
+			a[href *="com"]{
+			 	color: gray;
+			
+			
+		</style>
+		
+		
+		
+	</head>
+	
+	
+	
+	<body>
+		<a person="" href="http://www.baidu.com">百度</a><br />
+		<a href="https://www.sina.cn">新浪</a><br />
+		<a href="https://www.wangyi.org">网易</a><br />
+		<a href="http://www.souhu.com">搜狐</a><br />
+		<div href="我是一个假href">
+			我不是超链接
+		</div><br />
+		
+	</body>
+</html>

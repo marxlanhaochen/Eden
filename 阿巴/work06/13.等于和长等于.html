@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 ==	等于
+			 	数值相等就相等
+			 
+			 === 长等于
+			 	数值相等且类型相同才相等
+			 * */
+			var a =12;
+			var b ="12";
+			
+			console.info(a==b);//true
+			console.info(a===b);//false
+			
+			console.info(true==1);//true 
+			console.info(true===1);//false
+			
+			//null的底层其实就是undefined
+			console.info(null==undefined)//true
+			console.info(null===undefined)//false
+			
+			/**
+			 * 面试题  
+			 *   boolean类型可以做运算 
+			 */
+			console.info(true + 1); // 2
+			/**
+			 * 面试题 【重点】
+			 *   讲一讲 undefined 和null 的异同
+			 *  
+			 * js
+			 *    除了js之外 其他语言如果变量没有定义 都是用null来的表示 只有js非要将 null和undefined分开使用 
+			 *    实际上  null 和undefined 表达的意思都是一样 都是  这个变量不存在 
+			 * 
+			 *   不同之处在于 
+			 *     undefined 不能做运算 
+			 *     null 可以做运算 且表示 0 
+			 * 
+			 * 
+			 */
+			//var  a = undefined;
+			var b = null;
+//			console.info(a.toString()) // 报错 "undefined"
+//			console.info(b.toString()) // 报错 'null'
+			
+			console.info(undefined + 1) // NaN（NotaNumber，非数）
+			console.info(null + 1); // 1
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

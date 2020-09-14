@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			/*
+			 	flex设置子元素上的属性
+			 		1 排序
+			 			order 值越大越靠后
+			 			
+			 		2 侧轴方向的位置
+			 			align-item
+			 					flex-start/end
+			 					center
+			 					baseline
+			 					stretch		
+			 			align-self 设置在子元素上 会覆盖align-items的值
+			 		3 大小
+			 			设置了flex属性的元素 会丢失原有的宽高 目的就是填满整个区域
+			 				取值 阿拉伯数字
+			 * */
+			
+			
+			
+			.box{
+				width: 800px;
+				height: 400px;
+				border: 2px dashed deepskyblue;
+				display: flex;
+				align-items: center;
+				
+				
+			}
+			.d{
+				width: 100px;
+				height: 100px;
+				/*border-radius: 50%;*/
+				color: black;
+				
+			}
+			.d1{
+				background-color: red;
+				/*flex: 3;*/
+			}
+			.d2{
+				background-color: yellow;
+				/*flex: 1;*/
+			}
+			.d3{
+				background-color: green;				
+			}
+			.d4{
+				background-color: orange;				
+			}
+			.d5{
+				background-color: blue;				
+			}
+		</style>
+	
+	
+	<body>
+		<div class="box">
+			<div class="d d1">1</div>
+			<div class="d d2">2</div>
+			<div class="d d3">3</div>
+			<div class="d d4">4</div>
+			<div class="d d5">5</div>
+		</div>
+		
+	</body>
+</html>

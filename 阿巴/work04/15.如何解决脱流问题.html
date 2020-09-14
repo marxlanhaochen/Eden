@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+			/*如何解决脱流问题
+			 方式1：在父元素上添加指定的高度。这样写只能针对于高度固定，如果说父元素的高度是由子元素确定的，那么这种写法不佳
+			 方式2：可以在父元素的结尾 清除子元素的浮动
+			 			清除浮动有一个属性
+			 					clear
+			 						left【清除左浮动】
+			 						right【清除右浮动】
+			 						both【清除左右浮动】
+			 思考： 浮动脱流 我们是否都要解决---明确 浮动脱流问题都要解决。今后写浮动的话，在没有设置高度的情况下都需要手动清除浮动 
+			 
+			 注意事项：
+			 	用来是清除浮动的元素必须是非行级元素：块级 行内块 单标签都可以清除浮动
+			 	
+			 * 
+			 * * */
+			
+			.p {
+				border: 5px solid orange;
+				background-color: black;
+				width: 550px;
+				/*height: 200px;*/
+			}
+			
+			div.s1,div.s2,div.s3,div.s4  {
+				width: 100px;
+				height: 100px;
+				border-radius: 30%;
+	
+			}
+			
+			div.s1 {
+				background-color: red;
+					float: right;
+			}
+			
+			div.s2 {
+				background-color: yellow;
+				float: left;
+			}
+			
+			div.s3 {
+				background-color: green;
+				float: right;
+			}
+			
+			div.s4 {
+				background-color: deepskyblue;
+				float: left;
+			}
+			
+			div.box {
+				height: 200px;
+				width: 100px;
+				background-color: pink;
+			}
+			
+			/*.clearBox {
+				clear: left;
+				clear: both;
+				
+			}*/
+			.clearBox::after {
+				content: '清除浮动专用';
+				clear: both;
+				display: block;
+				width: 0;
+				height: 0;
+				overflow: hidden;
+			
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		
+        <!--class中多个id用空格隔开-->
+        
+		<div class="p clearBox"> 
+			<div class="s1"></div>
+			<div class="s2"></div>
+			<div class="s3"></div>
+			<div class="s4"></div>
+			<!--清除浮动  除了清除浮动就没有其他的意义了-->
+			<!--<div class="clearBox"></div>-->
+		</div>
+		<div class="box"></div>
+	</body>
+</html>

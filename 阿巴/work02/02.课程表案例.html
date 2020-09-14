@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--如何快速书写网页
+			1 书写标签    tag+tab  自动生成一个标签  <tag></tag>
+			2 生成属性 
+			   font[color=blue][size=7][face=楷体]+tab  ===》  <font color="blue" size="7" face="楷体"></font>
+		    3 添加文本内容
+		                   标签{内容} +tab  ==》    <tag>内容</tag>
+		        h1{标题} +tab  ==>  <h1>标题</h1>
+		    4 标签的数量
+		        ul>li +tab  ===》  <ul>
+								 	<li></li>
+								 </ul>
+			    ul>li*10   === 》 <ul>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								   	<li></li>
+								 </ul>
+		   
+		-->
+		<!--
+			位置
+			线
+			线的颜色 
+			大小
+			背景色
+	 	美化表格 ：
+	 	   对表格添加属性
+	 	   
+	 	table  
+	 	   align  left/center/right 改变 表格的位置
+		   border  设置表格是否有边框  number 边框的像素
+		   bordercolor 设置边框线的颜色
+		   bgcolor 表格的背景颜色
+		   height 设置表格的高度 
+		   widht 设置表格的宽度
+		   cellspacing  单元格同单元格之间的距离 
+		   cellpadding  单元格中的文本到边框的距离
+		   background   背景图   背景图会覆盖掉背景色
+		 表格默认大小   文字撑开的   手动设置表格的大小
+		 
+		  tr 
+		    align  left/center/right   这一个 表格中的文本在  单元格中的位置
+		    bgcolor  这一行的背景色
+		    background  背景图   这一行的背景图
+		    height  设置某一行的高度
+		  td
+		    align  left/center/right  文本在该单元格的位置 
+		    bgcolor  这个单元格的背景色
+		    background  背景图   这个单元格的背景图
+		    width  设置某个单元格的宽度
+		    clospan 纵跨多少列 
+		    rowspan  横跨多少行
+		 
+		-->
+		
+		  <table align="center" border="5" bordercolor="orange" bgcolor="lightblue"
+		  	 height="350" width="840"
+		  	 cellspacing="0" cellpadding="0"
+		  	 >
+		  	<tr  bgcolor="red" height="50">
+		  		<!--
+		  			
+		  			colspan 纵跨多少列
+		  		-->
+		  		<td align="center" bgcolor="yellow" width="80" colspan="2"></td>
+		  	
+		  		<th>星期一</th>
+		  		<th>星期二</th>
+		  		<th>星期三</th>
+		  		<th>星期四</th>
+		  		<th>星期五</th>
+		  	</tr>
+		  	<tr>
+		  		<td width="100" rowspan="4">上午</td>
+		  		<td>1</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  		
+		  		<td>2</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  	
+		  		<td>3</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  	
+		  		<td>4</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  		<td rowspan="4">下午</td>
+		  		<td>1</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  	
+		  		<td>2</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  
+		  		<td>3</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  	
+		  		<td>4</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  		<td>数学</td>
+		  	</tr>
+		  	<tr>
+		  		<td colspan="7">备注信息</td>
+		  	
+		  	</tr>
+		  </table>
+		
+		
+		   
+		
+		    
+		
+		
+	   
+	</body>
+</html>

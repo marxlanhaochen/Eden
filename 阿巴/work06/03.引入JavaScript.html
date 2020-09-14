@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--引入hello.js
+			src 属性 指向要引入文件的位置
+		
+		注意事项
+			内嵌式引入
+					<script type="text/javascript">
+						js 脚本
+					</script>			
+			外链式引入 
+				【script 标签中没有内容 但是 不能写成单标签】
+				【script 虽然是双标签 但是一旦script中存在了src属性 那么双标签里面的内容将不会执行】
+					<script type="text/javascript" src="">
+						
+					</script>
+			综上所述：
+				内嵌式引入 script上不能有src属性
+				外链式引入 双标签不要写内容
+				
+			
+			
+		-->
+				
+	</head>
+	<script type="text/javascript" src="js/hello.js">			
+	</script>
+	<body>
+	</body>
+</html>

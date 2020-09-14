@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		/*
+		 	js数据类型
+		 		1 简单数据类型
+			 			1 数字 number	直接写数字 包含 正数 负数 小数
+			 			2 字符串 string 字符串类型必须有引号
+			 								单引号或双引号都可以	
+			 			3 布尔 boolean【不能加引号】
+			 					true 真/正确
+		 						fales 假/错误
+			 			4 未定义 undefined
+			 						表示定义了变量 但是没有给变量赋值
+			 						undefined 并不只能表示一个类型 也可以是一个值，值的类型就是undefined类型
+			 						
+			 			5 空 null
+			 			
+		 			检测简单数据类型的方式（两种都可以）
+		 				1 typeof+变量名
+		 				
+		 				2 Object.prototype.toString.call(变量名) 
+		 				
+		 		2 复杂数据类型
+			 			1 函数
+			 			2 数组
+			 			3 对象		 		 
+		 * */
+		// js通过值 反推数据类型
+		var a = -10.88;
+		console.info(typeof a)//number
+		console.info(Object.prototype.toString.call(a))// [object Number]
+		
+		//字符串 string 字符串类型必须有引号  单引号或双引号都可以			 								
+		var b = "上元教育";
+		console.info(typeof b)//string
+		console.info(Object.prototype.toString.call(b))// [object String]
+		
+		
+		/*		 	
+		 	布尔类型【不能加引号】
+		 		true 真/正确
+		 		fales 假/错误		 	
+		 	* 
+		 	* */
+		var c = true;
+		console.info(typeof c)//boolean
+		console.info(Object.prototype.toString.call(c))	// [object Boolean]
+		
+		//未定义类型
+		var d 
+		var d = undefined;
+		console.info(typeof d)//null
+		console.info(Object.prototype.toString.call(d))	// [object Null]
+		
+		//空类型
+		var f = null;
+		console.info(typeof f)// object(X)谷歌浏览器检测出的结果是错误的 正常应该是 null 
+		console.info(Object.prototype.toString.call(f))// [object Null]
+		
+		
+	</script>
+	<body>
+	</body>
+</html>

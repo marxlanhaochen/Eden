@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--引入 音频
+			
+			src  引入资源的位置 
+			  网络资源 
+			本地资源
+			controls 显示控件
+			autoplay 自动播放
+			loop     自动播放多少次  
+		-->
+		<!--不考虑兼容性-->
+		<audio src="../audio/song.mp3" controls ></audio>
+		
+		<audio controls>
+			<source src="../audio/song.ogg" type="audio/ogg"></source>
+			<source src="../audio/song.mp3" type="audio/mp3"></source>
+			
+			<source src="../audio/song.wav" type="audio/wav"></source>
+			此浏览器不支持播放控件
+		</audio>
+			
+	
+		<!--引入视频
+			src  互联网资源 
+			     本地资源
+		-->
+		<video src="../video/video.mp4" controls width="300" height="300" poster="../img/test.jpg"></video>
+		
+		<!--兼容性处理-->
+		
+		<video  controls width="300" height="300" poster="../img/test.jpg" >
+			<source src="../video/video.ogg" type="video/ogg"></source>
+			<source src="../video/video.mp4" type="video/mp4"></source>
+		
+		</video>
+	</body>
+</html>
